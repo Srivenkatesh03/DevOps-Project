@@ -41,5 +41,14 @@ pipeline {
                 }
             }
         }
+        stage('Apllication deploy') {
+            steps{
+                sh '''
+                    docker compose down || true
+                    docker compose pull
+                    docker compose up -d
+                '''
+            }
+        }
     }
 }
