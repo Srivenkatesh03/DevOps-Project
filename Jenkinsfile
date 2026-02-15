@@ -41,7 +41,7 @@ pipeline {
                 }
             }
         }
-        stage('Apllication deploy') {
+        stage('Application deploy') {
             steps{
                 sh '''
                     docker-compose down || true
