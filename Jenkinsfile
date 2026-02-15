@@ -9,7 +9,8 @@ pipeline {
 
         stage('Git Clone') {
             steps {
-                git 'https://github.com/Srivenkatesh03/DevOps-Project.git'
+                git branch: 'main',
+                url: 'https://github.com/Srivenkatesh03/DevOps-Project.git'
                 echo 'Repository cloned successfully'
             }
         }
