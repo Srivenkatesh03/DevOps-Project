@@ -19,6 +19,7 @@ services:
       - mongo
     environment:
       - MONGO_URL=mongodb://mongo:27017/meanDB
+      - PORT=9090 
 
   frontend:
     build: ./frontend
